@@ -69,6 +69,7 @@ if (allBtnCopy.length) {
   const copyMessage = document.querySelector('.copy-message');
   allBtnCopy.forEach((item) => {
     item.addEventListener('click', function (e) {
+      e.preventDefault();
       const textValue = item
         .closest('[data-copy]')
         .querySelector('[data-copy-value]').innerHTML;

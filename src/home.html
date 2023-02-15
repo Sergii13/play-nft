@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/_head.htm',{ "title":"HomePage" })
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__row">
+        <aside class="wrapper__aside aside">
+          <div class="aside__content">
+            <a data-da=".header,991,0" href="#" class="aside__logo">
+              <img src="@img/main-img/logo.png" alt="" />
+            </a>
+            <ul data-da=".header__mobile,991,0" class="aside__list">
+              <li class="aside__item">
+                <a href="" class="aside__link active">
+                  <span class="aside__icon">
+                    <img src="@img/main-img/icon01.svg" alt="" />
+                  </span>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li class="aside__item">
+                <a href="" class="aside__link">
+                  <span class="aside__icon">
+                    <img src="@img/main-img/icon02.svg" alt="" />
+                  </span>
+                  <span>Launch Pools</span>
+                </a>
+              </li>
+              <li class="aside__item">
+                <a href="" class="aside__link">
+                  <span class="aside__icon">
+                    <img src="@img/main-img/icon03.svg" alt="" />
+                  </span>
+                  <span>My History</span>
+                </a>
+              </li>
+              <li class="aside__item">
+                <a href="" class="aside__link">
+                  <span class="aside__icon">
+                    <img src="@img/main-img/icon04.svg" alt="" />
+                  </span>
+                  <span>All Transaction</span>
+                </a>
+              </li>
+              <li class="aside__item">
+                <a href="" class="aside__link">
+                  <span class="aside__icon">
+                    <img src="@img/main-img/icon05.svg" alt="" />
+                  </span>
+                  <span>About Us</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <div class="wrapper__main">
+          @@include('html/_header.htm',{})
+          <main class="page">
+            <div class="main-block">
+              <div class="main-block__item item-main">
+                <div class="item-main__decor">
+                  <img
+                    srcset="@img/main-block/monet@2x.png 2x"
+                    src="@img/main-block/monet.png"
+                    alt=""
+                  />
+                </div>
+                <div class="item-main__top">
+                  <div class="item-main__head">
+                    <div class="item-main__label">Balance</div>
+                  </div>
+
+                  <div class="item-main__price">2 100 ETH</div>
+                  <div class="item-main__free-row">
+                    <p>Fee return - 50%: 0.12345 ETH</p>
+                    <span
+                      data-tippy-content="Lorem ipsum lorem ipsum lorem ipsum"
+                      class="item-main__info"
+                    >
+                      <img src="@img/svg/info.svg" alt="" />
+                    </span>
+                  </div>
+                </div>
+                <a href="" data-popup="#popup" class="button item-main__button">
+                  Withdraw
+                </a>
+              </div>
+              <div class="main-block__item item-main">
+                <div class="item-main__top">
+                  <div class="item-main__head">
+                    <div class="item-main__label">Ref Program:</div>
+                    <a
+                      href=""
+                      data-popup="#popup-history"
+                      class="item-main__history"
+                    >
+                      History
+                    </a>
+                  </div>
+                  <div class="item-main__items">
+                    <p>Total Refferal: <span>12365</span></p>
+                    <p>
+                      Total earned:
+                      <span
+                        >123 ETH <img src="@img/svg/valute.svg" alt=""
+                      /></span>
+                    </p>
+                  </div>
+                </div>
+                <div data-copy class="item-main__copy">
+                  <span data-copy-value class="item-main__value-copy"
+                    >https://fhsdjk.com</span
+                  >
+                  <button data-copy-button class="item-main__button-copy">
+                    <img src="@img/svg/copy.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="main-block__item item-main">
+                <div class="item-main__decor">
+                  <img
+                    srcset="@img/main-block/monet02@2x.png 2x"
+                    src="@img/main-block/monet02.png"
+                    alt=""
+                  />
+                </div>
+                <div class="item-main__top">
+                  <div class="item-main__head">
+                    <div class="item-main__label">
+                      Referral Program Balance:
+                    </div>
+                  </div>
+                  <div class="item-main__price">0.234 ETH</div>
+                </div>
+                <a
+                  href=""
+                  data-popup="#popup2"
+                  class="button item-main__button"
+                >
+                  Withdraw
+                </a>
+              </div>
+            </div>
+            <div class="level">
+              <div class="level__navigation">
+                <a href="" class="level__link active">
+                  <span> USA</span>
+                </a>
+                <a href="" class="level__link soon">
+                  <span class="level__label-soon"> SOON </span>
+                  <span> Saudi Arabia </span>
+                </a>
+                <a href="" class="level__link soon">
+                  <span class="level__label-soon"> SOON </span>
+                  <span>Canada</span>
+                </a>
+              </div>
+              <div class="level__items">
+                <div class="level__item item-level">
+                  <div class="item-level__image-wrap">
+                    <img src="@img/level/01.svg" alt="" />
+                  </div>
+                  <div class="item-level__content">
+                    <div class="item-level__row">
+                      <div class="item-level__left">
+                        <div class="item-level__title">Free Level</div>
+                        <div class="item-level__info">
+                          <p>
+                            Rate:
+                            <span
+                              >0.006 ETH / day
+                              <img src="@img/svg/valute.svg" alt=""
+                            /></span>
+                          </p>
+                          <p>
+                            Capitalicity:
+                            <span>
+                              0.00017 ETH <img src="@img/svg/valute.svg" alt=""
+                            /></span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="item-level__right">
+                        <div class="item-level__items">
+                          <div class="item-level__column">
+                            Capitacity time:
+                            <span>60 min</span>
+                          </div>
+                          <div class="item-level__column">
+                            Total:
+                            <span class="yellow">0.23435 ETH / Month</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="" class="item-level__button button">
+                      Claim - 0.0048237 ETH
+                      <img src="@img/svg/valute.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="level__item item-level">
+                  <div class="item-level__image-wrap">
+                    <img src="@img/level/02.svg" alt="" />
+                  </div>
+                  <div class="item-level__content">
+                    <div class="item-level__row">
+                      <div class="item-level__left">
+                        <div class="item-level__title">Level 1</div>
+                        <div class="item-level__info">
+                          <p>
+                            Rate:
+                            <span
+                              >0.006 ETH / day
+                              <img src="@img/svg/valute.svg" alt=""
+                            /></span>
+                          </p>
+                          <p>
+                            Capitalicity:
+                            <span>
+                              0.00017 ETH <img src="@img/svg/valute.svg" alt=""
+                            /></span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="item-level__right">
+                        <div class="item-level__items">
+                          <div class="item-level__column">
+                            ROI:
+                            <span>60%</span>
+                          </div>
+                          <div class="item-level__column">
+                            Total:
+                            <span class="yellow">0.23435 ETH / Month</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="" class="item-level__button button">
+                      Claim - 0.0048237 ETH
+                      <img src="@img/svg/valute.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="level__item item-level">
+                  <div class="item-level__image-wrap">
+                    <img src="@img/level/03.svg" alt="" />
+                  </div>
+                  <div class="item-level__content">
+                    <div class="item-level__row">
+                      <div class="item-level__left">
+                        <div class="item-level__title">Level 2</div>
+                        <div class="item-level__info">
+                          <p>
+                            Rate:
+                            <span
+                              >0.006 ETH / day
+                              <img src="@img/svg/valute.svg" alt=""
+                            /></span>
+                          </p>
+                          <p>
+                            Capitalicity:
+                            <span>
+                              0.00017 ETH <img src="@img/svg/valute.svg" alt=""
+                            /></span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="item-level__right">
+                        <div class="item-level__items">
+                          <div class="item-level__column">
+                            ROI:
+                            <span>60%</span>
+                          </div>
+                          <div class="item-level__column">
+                            Total:
+                            <span class="yellow">0.23435 ETH / Month</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="" class="item-level__button button">
+                      Claim - 0.0048237 ETH
+                      <img src="@img/svg/valute.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="level__item item-level">
+                  <div class="item-level__image-wrap">
+                    <img src="@img/level/04.svg" alt="" />
+                  </div>
+                  <div class="item-level__content">
+                    <div class="item-level__row">
+                      <div class="item-level__left">
+                        <div class="item-level__title">Level 3</div>
+                        <div class="item-level__info">
+                          <p>
+                            Rate:
+                            <span
+                              >0.006 ETH / day
+                              <img src="@img/svg/valute.svg" alt=""
+                            /></span>
+                          </p>
+                          <p>
+                            Capitalicity:
+                            <span>
+                              0.00017 ETH <img src="@img/svg/valute.svg" alt=""
+                            /></span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="item-level__right">
+                        <div class="item-level__items">
+                          <div class="item-level__column">
+                            ROI:
+                            <span>60%</span>
+                          </div>
+                          <div class="item-level__column">
+                            Total:
+                            <span class="yellow">0.23435 ETH / Month</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="" class="item-level__button button">
+                      Claim - 0.0048237 ETH
+                      <img src="@img/svg/valute.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="level__item item-level">
+                  <div class="item-level__image-wrap">
+                    <img src="@img/level/05.svg" alt="" />
+                  </div>
+                  <div class="item-level__content">
+                    <div class="item-level__row">
+                      <div class="item-level__left">
+                        <div class="item-level__title">Level 4</div>
+                        <div class="item-level__info">
+                          <p>
+                            Rate:
+                            <span
+                              >0.006 ETH / day
+                              <img src="@img/svg/valute.svg" alt=""
+                            /></span>
+                          </p>
+                          <p>
+                            Capitalicity:
+                            <span>
+                              0.00017 ETH <img src="@img/svg/valute.svg" alt=""
+                            /></span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="item-level__right">
+                        <div class="item-level__items">
+                          <div class="item-level__column">
+                            ROI:
+                            <span>60%</span>
+                          </div>
+                          <div class="item-level__column">
+                            Total:
+                            <span class="yellow">0.23435 ETH / Month</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="" class="item-level__button button">
+                      Claim - 0.0048237 ETH
+                      <img src="@img/svg/valute.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="level__item item-level">
+                  <div class="item-level__image-wrap">
+                    <img src="@img/level/06.svg" alt="" />
+                  </div>
+                  <div class="item-level__content">
+                    <div class="item-level__row">
+                      <div class="item-level__left">
+                        <div class="item-level__title">Level 5</div>
+                        <div class="item-level__info">
+                          <p>
+                            Rate:
+                            <span
+                              >0.006 ETH / day
+                              <img src="@img/svg/valute.svg" alt=""
+                            /></span>
+                          </p>
+                          <p>
+                            Capitalicity:
+                            <span>
+                              0.00017 ETH <img src="@img/svg/valute.svg" alt=""
+                            /></span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="item-level__right">
+                        <div class="item-level__items">
+                          <div class="item-level__column">
+                            ROI:
+                            <span>60%</span>
+                          </div>
+                          <div class="item-level__column">
+                            Total:
+                            <span class="yellow">0.23435 ETH / Month</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="" class="item-level__button button">
+                      Claim - 0.0048237 ETH
+                      <img src="@img/svg/valute.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="level__item item-level">
+                  <div class="item-level__image-wrap">
+                    <img src="@img/level/07.svg" alt="" />
+                  </div>
+                  <div class="item-level__content">
+                    <div class="item-level__row">
+                      <div class="item-level__left">
+                        <div class="item-level__title">Level 6</div>
+                        <div class="item-level__info">
+                          <p>
+                            Rate:
+                            <span
+                              >0.006 ETH / day
+                              <img src="@img/svg/valute.svg" alt=""
+                            /></span>
+                          </p>
+                          <p>
+                            Capitalicity:
+                            <span>
+                              0.00017 ETH <img src="@img/svg/valute.svg" alt=""
+                            /></span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="item-level__right">
+                        <div class="item-level__items">
+                          <div class="item-level__column">
+                            ROI:
+                            <span>60%</span>
+                          </div>
+                          <div class="item-level__column">
+                            Total:
+                            <span class="yellow">0.23435 ETH / Month</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="" class="item-level__button button">
+                      Claim - 0.0048237 ETH
+                      <img src="@img/svg/valute.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="level__item item-level">
+                  <div class="item-level__image-wrap">
+                    <img src="@img/level/08.svg" alt="" />
+                  </div>
+                  <div class="item-level__content">
+                    <div class="item-level__row">
+                      <div class="item-level__left">
+                        <div class="item-level__title">Level 7</div>
+                        <div class="item-level__info">
+                          <p>
+                            Rate:
+                            <span
+                              >0.006 ETH / day
+                              <img src="@img/svg/valute.svg" alt=""
+                            /></span>
+                          </p>
+                          <p>
+                            Capitalicity:
+                            <span>
+                              0.00017 ETH <img src="@img/svg/valute.svg" alt=""
+                            /></span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="item-level__right">
+                        <div class="item-level__items">
+                          <div class="item-level__column">
+                            ROI:
+                            <span>60%</span>
+                          </div>
+                          <div class="item-level__column">
+                            Total:
+                            <span class="yellow">0.23435 ETH / Month</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="" class="item-level__button button">
+                      Claim - 0.0048237 ETH
+                      <img src="@img/svg/valute.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="level__item item-level">
+                  <div class="item-level__image-wrap">
+                    <img src="@img/level/09.svg" alt="" />
+                  </div>
+                  <div class="item-level__content">
+                    <div class="item-level__row">
+                      <div class="item-level__left">
+                        <div class="item-level__title">Level 8</div>
+                        <div class="item-level__info">
+                          <p>
+                            Rate:
+                            <span
+                              >0.006 ETH / day
+                              <img src="@img/svg/valute.svg" alt=""
+                            /></span>
+                          </p>
+                          <p>
+                            Capitalicity:
+                            <span>
+                              0.00017 ETH <img src="@img/svg/valute.svg" alt=""
+                            /></span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="item-level__right">
+                        <div class="item-level__items">
+                          <div class="item-level__column">
+                            ROI:
+                            <span>60%</span>
+                          </div>
+                          <div class="item-level__column">
+                            Total:
+                            <span class="yellow">0.23435 ETH / Month</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="" class="item-level__button button">
+                      Claim - 0.0048237 ETH
+                      <img src="@img/svg/valute.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="level__item item-level">
+                  <div class="item-level__image-wrap">
+                    <img src="@img/level/10.svg" alt="" />
+                  </div>
+                  <div class="item-level__content">
+                    <div class="item-level__row">
+                      <div class="item-level__left">
+                        <div class="item-level__title">Level 9</div>
+                        <div class="item-level__info">
+                          <p>
+                            Rate:
+                            <span
+                              >0.006 ETH / day
+                              <img src="@img/svg/valute.svg" alt=""
+                            /></span>
+                          </p>
+                          <p>
+                            Capitalicity:
+                            <span>
+                              0.00017 ETH <img src="@img/svg/valute.svg" alt=""
+                            /></span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="item-level__right">
+                        <div class="item-level__items">
+                          <div class="item-level__column">
+                            ROI:
+                            <span>60%</span>
+                          </div>
+                          <div class="item-level__column">
+                            Total:
+                            <span class="yellow">0.23435 ETH / Month</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="" class="item-level__button button">
+                      Claim - 0.0048237 ETH
+                      <img src="@img/svg/valute.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
+</html>

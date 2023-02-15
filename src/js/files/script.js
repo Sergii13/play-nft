@@ -73,6 +73,7 @@ if (allBtnCopy.length) {
         .closest('[data-copy]')
         .querySelector('[data-copy-value]').innerHTML;
       copyTextToClipboard(textValue);
+      copyMessage.style.top = `${pageYOffset + 20}px`;
       copyMessage.hidden = false;
       item.classList.add('active');
       setTimeout(() => {

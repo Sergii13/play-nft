@@ -1,0 +1,124 @@
+.history {
+  @media (max-width: $mobile) {
+    padding-bottom: rem(30);
+  }
+  // .history__title
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: rem(8);
+    }
+  }
+  // .history__table
+  &__table {
+  }
+}
+
+.history-table {
+  border: 1px solid #7e34cb;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  table {
+    background: linear-gradient(101.33deg, #a249ff -1.74%, #25004d 100.61%);
+    border-radius: var(--border-radius);
+    border-collapse: collapse;
+    table-layout: fixed;
+    overflow: hidden;
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: math.div(20, 14);
+    @media (max-width: $mobile) {
+      font-size: rem(10);
+    }
+
+    td,
+    th {
+      text-align: center;
+      word-break: break-word;
+      &:not(:last-child) {
+        border-right: 0.5px solid rgba(255, 255, 255, 0.1);
+      }
+    }
+    thead {
+      border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+    }
+    td {
+      padding: 13px 5px 17px;
+      @media (max-width: $mobile) {
+        padding: rem(10) rem(5);
+      }
+    }
+    th {
+      text-align: center;
+      padding: 14px 5px 16px;
+      color: rgba(255, 255, 255, 0.56);
+      font-weight: 500;
+      @media (max-width: $mobile) {
+        padding: rem(10) rem(5);
+      }
+    }
+    tr {
+      &:not(:last-child) {
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+  // .history-table__value
+  &__value {
+    &.yellow {
+      display: inline-flex;
+      align-items: center;
+      gap: rem(7);
+      color: #ffa400;
+      img {
+        width: 16px;
+        flex-shrink: 0;
+        @media (max-width: $mobileSmall) {
+          width: 12px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 630px) {
+    table {
+      border: 0;
+      td,
+      th {
+        text-align: left;
+      }
+    }
+
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+
+    table tr {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      display: block;
+      &:not(:last-child) {
+        margin-bottom: rem(10);
+      }
+    }
+
+    table td {
+      display: flex;
+    }
+
+    table td::before {
+      content: attr(data-label);
+      flex: 0 0 30%;
+      font-weight: 700;
+    }
+
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+}

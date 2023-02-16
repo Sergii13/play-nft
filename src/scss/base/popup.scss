@@ -182,6 +182,21 @@ body::after {
       }
     }
   }
+  &__factor {
+    display: flex;
+    justify-content: center;
+    &:not(:last-child) {
+      margin-bottom: rem(30);
+    }
+  }
+  &__claim-button {
+    display: flex;
+    background: #ffffff;
+    border: 2px solid #e1e1e1;
+    color: #a249ff;
+    max-width: rem(150);
+    margin: 0 auto;
+  }
   &__buttons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

@@ -1,1 +1,7 @@
 // Заголовки, загальні БЕМ блоки та інше...
+.title {
+  font-weight: 600;
+  @include adaptiveValue('font-size', 32, 24);
+  line-height: math.div(48, 32);
+  text-transform: capitalize;
+}

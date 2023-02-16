@@ -1,59 +1,51 @@
 .options {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	// .options__item
-	&__item {
-		position: relative;
-		cursor: pointer;
-		&:not(:last-child) {
-			margin-bottom: em(5);
-		}
-	}
-	// .options__input
-	&__input {
-		width: 0;
-		height: 0;
-		opacity: 0;
-		position: absolute;
-		&:focus + .options__label:before {
-			box-shadow: 0 0 5px #000;
-		}
-		&:checked + .options__label:before {
-		}
-		&:checked + .options__label:after {
-			transform: scale(1);
-		}
-	}
-	// .options__label
-	&__label {
-		display: inline-flex;
-		align-items: center;
-		cursor: pointer;
-		gap: 10px;
-		&:before {
-			content: "";
-			align-self: flex-start;
-			width: 20px;
-			height: 20px;
-			flex: 0 0 20px;
-			border-radius: 50%;
-			border: 1px solid #a7a9ac;
-		}
-		&:after {
-			content: "";
-			transition: all 0.3s ease 0s;
-			transform: scale(0);
-			width: 10px;
-			height: 10px;
-			border-radius: 50%;
-			background-color: #77243a;
-			position: absolute;
-			left: 5px;
-			top: 5px;
-		}
-	}
-	// .options__text
-	&__text {
-	}
+  display: flex;
+  background: #ffffff;
+  border: 2px solid #e1e1e1;
+  border-radius: 16px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  @media (max-width: $mobileSmall) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  // .options__item
+  &__item {
+    position: relative;
+    cursor: pointer;
+  }
+  // .options__input
+  &__input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+
+    &:checked + .options__label .options__text {
+      color: #ffffff;
+      background: linear-gradient(101.33deg, #a249ff -1.74%, #25004d 100.61%);
+      border: 1px solid #7e34cb;
+    }
+  }
+  // .options__label
+  &__label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  // .options__text
+  &__text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: math.div(21, 14);
+    color: #a249ff;
+    border-radius: 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 100%;
+    border: 1px solid transparent;
+  }
 }

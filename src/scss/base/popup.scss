@@ -22,7 +22,7 @@ body::after {
   left: 0;
   bottom: 0;
   right: 0;
-  padding: 30px 10px;
+  padding: 70px 10px;
   transition: visibility 0.8s ease 0s;
   visibility: hidden;
   pointer-events: none;
@@ -243,8 +243,8 @@ body::after {
     overflow: hidden;
     width: 100%;
     font-weight: 500;
-    font-size: 8px;
-    line-height: 10px;
+    font-size: 12px;
+    line-height: 16px;
 
     td,
     th {

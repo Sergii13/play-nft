@@ -283,9 +283,12 @@
             <img src="@img/svg/arrow-big.svg" alt="" />
           </div>
           <div class="calc__bottom">
-            <div class="calc__bottom-head">ROT at current rates</div>
-            <div class="calc__bottom-value">$22.45</div>
-            <div class="calc__bottom-finish">= 2545 CAKE (2.25%)</div>
+            <div class="calc__left-bottom">
+              <div class="calc__bottom-head">ROT at current rates</div>
+              <div class="calc__bottom-value">$22.45</div>
+              <div class="calc__bottom-finish">= 2545 CAKE (2.25%)</div>
+            </div>
+            <div class="calc__right-bottom">ARP: 12 345 %</div>
           </div>
         </div>
       </form>
@@ -303,6 +306,104 @@
         <img src="@img/main-img//factor.png" alt="" />
       </div>
       <a href="" class="popup__claim-button button"> Claim </a>
+    </div>
+  </div>
+</div>
+<div id="popup-staked" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button data-close type="button" class="popup__close">
+        <img src="@img/svg/close.svg" alt="" />
+      </button>
+      <div class="popup__title">Staked</div>
+      <form action="#" class="calc">
+        <div class="calc__item">
+          <div class="calc__head">
+            <div class="calc__label">Get Staked</div>
+            <div class="calc__head-right">ARP: 12 345 %</div>
+          </div>
+
+          <div class="calc__wrap">
+            <div class="calc__content">
+              <div class="calc__left">
+                <div class="calc__item-input">
+                  <input
+                    autocomplete="off"
+                    type="text"
+                    name="form[]"
+                    data-error="Ошибка"
+                    placeholder="1000"
+                    class="input"
+                  />
+                  <span class="calc__valute"> USD </span>
+                </div>
+                <div class="calc__two-valute">232242.332 CAKE</div>
+              </div>
+              <div class="calc__icon-arrow">
+                <img src="@img/svg/calc-arrows.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="calc__tags">
+            <button class="calc__tag">$100</button>
+            <button class="calc__tag">$1000</button>
+            <button class="calc__tag">$10 000</button>
+            <button class="calc__tag">MY BALANCE</button>
+            <span data-tippy-content="Lorem iposum" class="calc__info">
+              <img src="@img/svg/question.svg" alt="" />
+            </span>
+          </div>
+          <div class="calc__label">Wallet balance: 345 USDT</div>
+          <a href="" class="calc__bottom-button button"> Staked </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div id="popup-unstaked" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button data-close type="button" class="popup__close">
+        <img src="@img/svg/close.svg" alt="" />
+      </button>
+      <div class="popup__title">Unstaked</div>
+      <form action="#" class="calc">
+        <div class="calc__item">
+          <div class="calc__label">Get Staked</div>
+          <div class="calc__wrap">
+            <div class="calc__content">
+              <div class="calc__left">
+                <div class="calc__item-input">
+                  <input
+                    autocomplete="off"
+                    type="text"
+                    name="form[]"
+                    data-error="Ошибка"
+                    placeholder="1000"
+                    class="input"
+                  />
+                  <span class="calc__valute"> USD </span>
+                </div>
+                <div class="calc__two-valute">232242.332 CAKE</div>
+              </div>
+              <div class="calc__icon-arrow">
+                <img src="@img/svg/calc-arrows.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="calc__tags">
+            <button class="calc__tag">$100</button>
+            <button class="calc__tag">$1000</button>
+            <button class="calc__tag">$10 000</button>
+            <button class="calc__tag">MY BALANCE</button>
+            <span data-tippy-content="Lorem iposum" class="calc__info">
+              <img src="@img/svg/question.svg" alt="" />
+            </span>
+          </div>
+          <div class="calc__label">Pool balance: 345 USDT</div>
+          <a href="" class="calc__bottom-button button">Unstaked</a>
+        </div>
+      </form>
     </div>
   </div>
 </div>

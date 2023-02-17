@@ -106,11 +106,53 @@
     justify-content: center;
     margin: 22px 0;
   }
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .calc__label {
+      &:not(:last-child) {
+        margin-bottom: rem(0);
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: rem(10);
+    }
+  }
+  &__head-right {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: math.div(27, 18);
+
+    @media (max-width: $mobileSmall) {
+      font-size: rem(16);
+    }
+  }
   // .calc__bottom
   &__bottom {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 16px;
     padding: rem(16) rem(24);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(10) rem(20);
+    flex-wrap: wrap;
+  }
+  &__bottom-button {
+    width: 100%;
+    background: #ffffff;
+    border: 2px solid #e1e1e1;
+    margin-top: 17px;
+    color: #a249ff;
+  }
+  &__right-bottom {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: math.div(33, 22);
+    @media (max-width: $mobile) {
+      font-size: rem(18);
+    }
   }
   // .calc__bottom-head
   &__bottom-head {
